@@ -24,13 +24,8 @@ function Sidebar({ currentView, navigateToView, xp, profile, score }) {
       <aside className="no-print fixed top-0 left-0 z-40 h-full w-64 border-r border-emerald-500/10 bg-[#030f07]/95 backdrop-blur-xl hidden lg:flex flex-col">
         <div className="p-6 border-b border-white/5">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center text-black font-black text-lg shadow-lg shadow-emerald-500/30">
-              🌿
-            </div>
+            <span className="text-2xl font-black tracking-tight text-white">Eco</span>
             <div>
-              <div className="font-black text-lg tracking-tight">
-                Eco<span className="text-emerald-400">Aura</span>
-              </div>
               <div className="text-[10px] text-white/40 uppercase tracking-widest">Carbon Tracker</div>
             </div>
           </div>

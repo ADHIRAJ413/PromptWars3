@@ -1,7 +1,7 @@
-# Aura — AI-Powered Carbon Footprint Reduction System
+# Eco — Carbon Footprint Tracker
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Aura-Sustainability_System-10b981?style=for-the-badge&logo=airvisual" alt="Aura Logo"/>
+  <img src="https://img.shields.io/badge/Eco-Sustainability_System-10b981?style=for-the-badge" alt="Eco Logo"/>
   <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react" alt="React"/>
   <img src="https://img.shields.io/badge/Design-Glassmorphic-f8fafc?style=for-the-badge" alt="Design"/>
 </div>

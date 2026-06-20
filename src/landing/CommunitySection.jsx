@@ -3,7 +3,7 @@ import { GLASS_TEXTURE_STYLE } from './landingAssets';
 
 const stats = [
   { label: 'Metric Tons Offset', value: '42.5M', color: '#10b981' },
-  { label: 'Active Guardians', value: '890K', color: '#89ceff' },
+  { label: 'Our Members', value: '890K', color: '#89ceff' },
   { label: 'Ecosystems Restored', value: '12K', color: '#e9c349' },
   { label: 'Community XP', value: '1.2B', color: '#f59e0b' },
 ];

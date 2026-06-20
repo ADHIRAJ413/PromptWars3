@@ -16,10 +16,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-black font-black text-lg">
-                🌿
-              </div>
-              <span className="text-2xl font-black text-white">Eco<span className="text-emerald-400">Aura</span></span>
+              <span className="text-2xl font-black text-white">Eco</span>
             </div>
             <p className="text-white/40 font-light text-sm leading-relaxed mb-6">
               Tracking today. Protecting tomorrow. Our mission is to empower every individual to understand and reduce their environmental impact.

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { GLASS_TEXTURE_STYLE } from './landingAssets';
+import { GLASS_TEXTURE_STYLE, ASSETS } from './landingAssets';
 import { enterApp } from '../utils/navigation';
 
 const categories = [
@@ -115,7 +115,7 @@ export default function CalculatorSection({ onEnterApp }) {
             🌳 Personal Impact Analysis
           </span>
           <h2 className="text-5xl md:text-7xl font-black text-white mb-6 leading-none tracking-tighter">
-            Measure Your <span className="text-gradient-gold">Environmental Aura.</span>
+            Measure Your <span className="text-gradient-gold">Carbon Profile.</span>
           </h2>
           <p className="text-white/40 text-lg font-light max-w-2xl mx-auto tracking-wide">
             Quick demo — estimates in <strong className="text-white/60">tons CO₂ per year</strong>. The full app tracks in kg/month with more detail.

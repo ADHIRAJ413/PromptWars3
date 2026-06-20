@@ -86,7 +86,7 @@ export default function HeroSection({ onEnterApp }) {
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold mb-8 border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-xl text-emerald-300 uppercase tracking-[0.2em]"
           >
             <span>🌍</span>
-            <span>The Earth Needs Your Aura</span>
+            <span>Track Your Carbon Impact</span>
           </motion.div>
 
           <motion.h1
@@ -96,7 +96,7 @@ export default function HeroSection({ onEnterApp }) {
             className="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.9] mb-8 tracking-tighter text-glow"
           >
             Track <span className="text-gradient-emerald">CO₂</span><br />
-            <span className="text-white">Save the Aura</span>
+            <span className="text-white">Save the Planet</span>
           </motion.h1>
 
           <motion.div

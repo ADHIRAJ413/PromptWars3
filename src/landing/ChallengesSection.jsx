@@ -98,7 +98,7 @@ export default function ChallengesSection() {
             🏆 Gamified Impact
           </span>
           <h2 className="text-5xl md:text-7xl font-black text-white mb-6 leading-none tracking-tighter">
-            Level Up Your <span className="text-gradient-emerald">Legacy.</span>
+            Get Rewarded for <span className="text-gradient-emerald">Good Habits.</span>
           </h2>
           <p className="text-white/40 text-lg font-light max-w-2xl mx-auto tracking-wide">
             Turn sustainable habits into rewarded achievements. Compete with the community and track your real-world progress.

@@ -17,10 +17,7 @@ export default function Navbar({ onEnterApp }) {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#030f07]/90 backdrop-blur-xl border-b border-emerald-500/10 shadow-lg shadow-emerald-900/20' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 bg-emerald-500 rounded-full flex items-center justify-center text-black font-black text-lg shadow-lg shadow-emerald-500/30 group-hover:shadow-emerald-500/50 transition-shadow">
-            🌿
-          </div>
-          <span className="text-xl font-black tracking-tight text-white">Eco<span className="text-emerald-400">Aura</span></span>
+          <span className="text-2xl font-black tracking-tight text-white">Eco</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

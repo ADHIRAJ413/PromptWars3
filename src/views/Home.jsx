@@ -152,7 +152,7 @@ function Home({ state, navigateToView }) {
       <div className="app-glass-card p-8 border-emerald-500/10 opacity-60">
         <h4 className="text-xs font-black uppercase tracking-[0.3em] text-white/40 mb-4">Problem Statement Alignment</h4>
         <p className="text-sm text-white/50 leading-relaxed italic">
-          "Aura is designed to empower individuals with the data intelligence needed to mitigate climate change. 
+          "Eco is designed to empower individuals with the data intelligence needed to mitigate climate change. 
           By monitoring daily activities across Transport, Energy, Food, and Waste, we provide the clarity required 
           to reduce your global carbon footprint one step at a time."
         </p>
