@@ -59,7 +59,7 @@ function Tracker({ state, updateState, navigateToView, showOnboarding }) {
 
   return (
     <div className="p-6 md:p-10 max-w-4xl mx-auto space-y-6">
-      <div className="text-center mb-8">
+      <div className="text-center mb-8" role="banner">
         <h2 className="app-section-title">Activity Tracker</h2>
         <p className="app-section-sub">
           Log transport, energy, food, and waste — results in kg CO₂ per month.
@@ -193,7 +193,7 @@ function Tracker({ state, updateState, navigateToView, showOnboarding }) {
           <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-6">
             <div className="text-center">
               <div className="text-xs text-white/40 uppercase tracking-widest mb-2">Live estimate</div>
-              <div className="text-5xl font-black text-emerald-400">
+              <div className="text-5xl font-black text-emerald-400" aria-live="polite" aria-atomic="true">
                 {liveRes.total} <span className="text-lg text-white/40">kg CO₂/mo</span>
               </div>
             </div>
