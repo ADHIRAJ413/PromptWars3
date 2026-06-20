@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { enterApp } from '../utils/navigation';
 
+/**
+ * Navigation Bar Component.
+ * Features glassmorphic styling and entrance logic for the Tracker.
+ * 
+ * @param {Object} props - Component properties.
+ * @param {Function} props.onEnterApp - Callback to transition into the App mode.
+ * @returns {JSX.Element} The responsive navigation bar.
+ */
 export default function Navbar({ onEnterApp }) {
   const [scrolled, setScrolled] = useState(false);
 

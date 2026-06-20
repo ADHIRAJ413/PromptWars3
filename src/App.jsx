@@ -20,27 +20,46 @@ const Profile = lazy(() => import('./views/Profile'));
  * Main App Container
  * Handles routing, theme, and persistent global state.
  */
+/**
+ * Main application Orchestrator.
+ * Manages global state, routing, and theme synchronization.
+ * 
+ * @returns {JSX.Element} The root application component.
+ */
 function App() {
+  /** @type {[string, function]} Current active view ID */
   const [currentView, setCurrentView] = useState(() => getViewFromHash());
+  
+  /** @type {[string, function]} Theme state (light|dark) */
   const [theme, setTheme] = useState(() => localStorage.getItem('ecobalance_theme') || 'dark');
+  
+  /** @type {[Object, function]} Persistent global application state */
   const [state, updateState] = usePersistentState();
 
+  /** Effect: Synchronizes theme selection with the DOM and LocalStorage */
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('ecobalance_theme', theme);
   }, [theme]);
 
+  /** Effect: Listen for URL hash changes to drive routing */
   useEffect(() => {
     const onHashChange = () => setCurrentView(getViewFromHash());
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
+  /**
+   * Navigates the application to a specific view.
+   * Updates state and URL hash.
+   * @param {string} viewId - The target view ID (e.g., 'tracker', 'dashboard').
+   */
   const navigateToView = (viewId) => {
     setCurrentView(viewId);
     window.location.hash = `#/app/${viewId}`;
   };
 
+  /** Calculation: Determines if the user should see the onboarding wizard */
   const showOnboarding = !state.onboardingComplete && state.history.length === 0;
 
   return (

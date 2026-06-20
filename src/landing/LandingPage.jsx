@@ -13,6 +13,12 @@ import CTASection from './CTASection';
 import Footer from './Footer';
 import { enterApp } from '../utils/navigation';
 
+/**
+ * Eco Landing Page Orchestrator.
+ * Composes various marketing sections and provides entrance to the App.
+ * 
+ * @returns {JSX.Element} The high-performance landing page.
+ */
 export default function LandingPage() {
   const openApp = (view = 'tracker') => enterApp(view);
 
