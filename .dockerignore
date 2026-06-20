@@ -1,0 +1,15 @@
+node_modules
+dist
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+.env*
+npm-debug.log*
+.DS_Store
+Thumbs.db
+coverage
+*.md
+legacy_vanilla
+ecomind_repo

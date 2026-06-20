@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ecobalance:
+    build: .
+    ports:
+      - "80:80"
+    restart: always
+    container_name: ecobalance_app
